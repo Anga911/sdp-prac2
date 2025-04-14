@@ -6,18 +6,22 @@ package sdp.prac2;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
+import java.util.List;
+
 class AppTest {
-    public void testTask4() {
-        List<Integer> a = Arrays.asList(1, 2, 3);
-        List<Integer> b = Arrays.asList(4, 5, 6);
+   @Test
+  
 
-        List<Integer> c = Arrays.asList(1, 2);
-        List<Integer> d = Arrays.asList(3);
+   void testTask1(){
+    List<Integer> a = List.of(7, 42, 19, 3, 88, 21, 56, 14, 67, 30);
 
-        List<Integer> expected = Arrays.asList(6, 10, 12);
-        assertEquals(expected, SimpleFunctions.Task4(a, b));
-        ssertNull(SimpleFunctions.Task4(c, d));
+    List<Integer> b = List.of(3, 12, 7, 3, 45, 8, 19, 2, 27, 3);
 
-    }
+    assertEquals(109,SimpleFunctions.Task1(a, b), "failed should be 109");
+
+
+   }
+
 
 }
