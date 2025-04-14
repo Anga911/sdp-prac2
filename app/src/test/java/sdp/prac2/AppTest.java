@@ -7,4 +7,17 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+    public void testTask4() {
+        List<Integer> a = Arrays.asList(1, 2, 3);
+        List<Integer> b = Arrays.asList(4, 5, 6);
+
+        List<Integer> c = Arrays.asList(1, 2);
+        List<Integer> d = Arrays.asList(3);
+
+        List<Integer> expected = Arrays.asList(6, 10, 12);
+        assertEquals(expected, SimpleFunctions.Task4(a, b));
+        ssertNull(SimpleFunctions.Task4(c, d));
+
+    }
+
 }
