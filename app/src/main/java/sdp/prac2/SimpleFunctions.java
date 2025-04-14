@@ -14,16 +14,16 @@ public class SimpleFunctions {
     If any index in b is out-of-range for a, that index is ignored :) 
     */
 
-    public static int Task1(int[] a, int[] b){
+    public static int Task1( List<Integer> a,  List<Integer> b){
 
         int acc = 0;
 
-        for (int i = 0; i < b.length; i++){
+        for (int i = 0; i < b.size(); i++){
             
-            if (b[i] < 0 || b[i] >= a.length){
+            if (b.get(i) < 0 || b.get(i) >= a.size()){
                 continue;
             }else{
-                acc += a[b[i]];
+                acc += a.get(b.get(i));
             }
         }
         return acc;
