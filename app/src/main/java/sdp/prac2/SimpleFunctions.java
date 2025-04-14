@@ -4,7 +4,8 @@ import java.util.*;
 
 public class SimpleFunctions {
     public SimpleFunctions() {}
-        /*
+
+    /*
     Anga: Task 1 
     Below is a method which accepts lists of 
     integers a and b, and adds up the elements 
@@ -27,28 +28,21 @@ public class SimpleFunctions {
         return acc;
     }
 
+    /*Task2 written by Anesipho
+    This method removes the first character from every element in a list
+    and returns the modified list*/ 
+    public static List<String> Task2(List<String> aList){
+        List<String> output = new ArrayList<>();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        for (String str : aList){
+            if (str.length() > 1){
+                output.add(str.substring(1));
+            } else if (str.length() == 1){
+                continue;
+            }
+        }
+        return output;
+    }
 
     /* Task6, which rounds up each number in the provided integer list to the next-highest multiple of 100. 
     If a number is already a multiple of 100, it is left unchanged. 
@@ -74,3 +68,8 @@ public class SimpleFunctions {
     }
     
 }
+
+
+
+
+
