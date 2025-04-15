@@ -6,8 +6,6 @@ package sdp.prac2;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-<<<<<<< HEAD
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,24 +27,5 @@ class AppTest {
         assertEquals(outcome, SimpleFunctions.Task2(test));
         assertEquals(outcome2, SimpleFunctions.Task2(test2));
     }
-=======
 
-import java.util.List;
-
-class AppTest {
-   @Test
-  
-
-   void testTask1(){
-    List<Integer> a = List.of(7, 42, 19, 3, 88, 21, 56, 14, 67, 30);
-
-    List<Integer> b = List.of(3, 12, 7, 3, 45, 8, 19, 2, 27, 3);
-
-    assertEquals(109,SimpleFunctions.Task1(a, b), "failed should be 109");
-
-
-   }
-
-
->>>>>>> 6614e40e03d4b979cdacf6e66c1b13d07190a80d
 }
