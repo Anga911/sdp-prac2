@@ -52,29 +52,25 @@ class AppTest {
    /*Task 3 unit tests using Arrange-Act-Assert*/
    //Test if balanced parentheses returns True
    @Test
-   void task3test1() {
-      // Arrange
-      String input = "(())()";
+   void testTask3() {
+     
+      String input1 = "(())()";
+      boolean result1 = Task3(input);
 
-      // Act
-      boolean result = Task3(input);
+      String input2 = "(()))(";
+      boolean result2 = Task3(input);
 
-      // Assert
-      assertTrue(result, "Expected balanced parentheses to return true");
+      
+      assertTrue(result1, "Expected balanced parentheses to return true");
+      assertFalse(result2, "Expected unbalanced parentheses to return false");
    }
 
    //Test if unbalanced parentheses returns False
-   @Test
-   void task3test2() {
-      // Arrange
-      String input = "(()))(";
+ 
+      
+     
+      
 
-      // Act
-      boolean result = Task3(input);
-
-      // Assert
-      assertFalse(result, "Expected unbalanced parentheses to return false");
-   }
 
 
 }
