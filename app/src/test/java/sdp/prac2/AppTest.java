@@ -55,11 +55,11 @@ class AppTest {
     void testTask3() {
         //Test if balanced parentheses returns True
         String input1 = "(())()";
-        boolean result1 = Task3(input1);
+        boolean result1 = SimpleFunctions.Task3(input1);
 
         //Test if unbalanced parentheses returns False
         String input2 = "(()))(";
-        boolean result2 = Task3(input2);
+        boolean result2 = SimpleFunctions.Task3(input2);
 
         
         assertTrue(result1, "Expected balanced parentheses to return true");
