@@ -28,6 +28,7 @@ public class SimpleFunctions {
         return acc;
     }
 
+
     /*Task2 written by Anesipho
     This method removes the first character from every element in a list
     and returns the modified list*/ 
@@ -42,6 +43,26 @@ public class SimpleFunctions {
             }
         }
         return output;
+    }
+
+    /*Task 4-Annette Nyirenda, */
+
+    public class task4{
+        //public static void main(String[] args) {
+            //System.out.println(toCalculate(List.of(20, 22, 18, 35, 48, 26, 87, 70),List.of(2, 4, 8, 1, 2, 3, 87, 70)));
+
+        //}
+        public static List<Integer> toCalculate(List <Integer> a, List <Integer> b){
+
+        if (a.size() != b.size()){ 
+                return null;
+            }
+                List<Integer> result = new ArrayList<>();
+                for (int i = 0; i < a.size(); i++) {
+                result.add( a.get(i) * b.get(b.size() -1-i));
+            }
+            return result;
+        }
     }
 
     /* Task6, which rounds up each number in the provided integer list to the next-highest multiple of 100. 
