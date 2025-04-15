@@ -43,6 +43,20 @@ public class SimpleFunctions {
         }
         return output;
     }
+    /*Complete the method Task5, which returns true if the list is sorted.*/
+
+    public boolean isSorted(List<Interger> list){
+        // check if the list is empty
+        if (list == null || list.isEmpty()){
+            return true // considered sorted since its empty
+        }
+        // Iterating through the list to check if sorted 
+        for (int k = 0 ; k < list.size() -1 ; k++){
+            if (list.get(k) > list.get(k+1)){
+                return false;
+            }
+        }return true;
+    } 
 
     /* Task6, which rounds up each number in the provided integer list to the next-highest multiple of 100. 
     If a number is already a multiple of 100, it is left unchanged. 
