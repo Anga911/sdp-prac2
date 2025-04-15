@@ -18,7 +18,16 @@ class AppTest {
 
     List<Integer> b = List.of(3, 12, 7, 3, 45, 8, 19, 2, 27, 3);
 
+    List<Integer> c = List.of();
+    List<Integer> d = List.of();
+
+
+    List<Integer> e = List.of(10, 20, 30, 40, 50);
+    List<Integer> f = List.of(0, 4, -1, 2, 10, 2, 0);
+
     assertEquals(109,SimpleFunctions.Task1(a, b), "failed should be 109");
+    assertEquals(0,SimpleFunctions.Task1(c, d), "failed should be 0");
+    assertEquals(130,SimpleFunctions.Task1(e, f), "failed should be 130");
 
 
    }
