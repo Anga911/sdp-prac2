@@ -65,7 +65,7 @@ public class SimpleFunctions {
 
         if (a.size() != b.size()){ 
                 return null;
-            }
+            } //
                 List<Integer> result = new ArrayList<>();
                 for (int i = 0; i < a.size(); i++) {
                 result.add( a.get(i) * b.get(b.size() -1-i));
