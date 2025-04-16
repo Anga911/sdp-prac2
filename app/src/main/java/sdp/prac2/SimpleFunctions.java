@@ -59,7 +59,7 @@ public class SimpleFunctions {
         }return true;
     } 
 
-    /*Task 4-Annette Nyirenda, */
+    /*Task 4-Annette Nyirenda, returns null if the sizes of the lists are different and true if */
     
         public static List<Integer> toCalculate(List <Integer> a, List <Integer> b){
 
