@@ -43,13 +43,33 @@ public class SimpleFunctions {
             }
         }
         return output;
+    } 
+    // task3 by luvuyo g23n4074
+    //checks if the brackets are balanced
+    public static boolean Task3(String input) {
+        int balance = 0;
+
+        for (char c : input.toCharArray()) {
+            if (c == '(') {
+                balance++;
+            } else if (c == ')') {
+                balance--;
+               
+                if (balance < 0) {
+                    return false;
+                }
+            }
+        }
+
+       
+        return balance == 0;
     }
     /*Complete the method Task5, which returns true if the list is sorted.*/
 
-    public boolean isSorted(List<Interger> list){
+    public static boolean isSorted(List<Integer> list){
         // check if the list is empty
         if (list == null || list.isEmpty()){
-            return true // considered sorted since its empty
+            return true; // considered sorted since its empty
         }
         // Iterating through the list to check if sorted 
         for (int k = 0 ; k < list.size() -1 ; k++){
@@ -59,13 +79,10 @@ public class SimpleFunctions {
         }return true;
     } 
 
-    /*Task 4-Annette Nyirenda, */
+    /*Task 4-Annette Nyirenda, returns null if the sizes of the lists are different and true if */
+    //updated task 4 
 
-    public class task4{
-        //public static void main(String[] args) {
-            //System.out.println(toCalculate(List.of(20, 22, 18, 35, 48, 26, 87, 70),List.of(2, 4, 8, 1, 2, 3, 87, 70)));
-
-        //}
+ 
         public static List<Integer> toCalculate(List <Integer> a, List <Integer> b){
 
         if (a.size() != b.size()){ 
@@ -77,7 +94,6 @@ public class SimpleFunctions {
             }
             return result;
         }
-    }
 
     /* Task6, which rounds up each number in the provided integer list to the next-highest multiple of 100. 
     If a number is already a multiple of 100, it is left unchanged. 

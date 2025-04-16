@@ -55,24 +55,52 @@ class AppTest {
     void testTask3() {
         //Test if balanced parentheses returns True
         String input1 = "(())()";
-        boolean result1 = Task3(input1);
+        boolean result1 = SimpleFunctions.Task3(input1);
 
         //Test if unbalanced parentheses returns False
         String input2 = "(()))(";
-        boolean result2 = Task3(input2);
+        boolean result2 = SimpleFunctions.Task3(input2);
 
         
         assertTrue(result1, "Expected balanced parentheses to return true");
         assertFalse(result2, "Expected unbalanced parentheses to return false");
    }
+   // test for task 4 by luvuyo g23n4074
+   @Test
+   public void testTask4() {
+    List<Integer> a = Arrays.asList(1, 2, 3);
+    List<Integer> b = Arrays.asList(4, 5, 6);
+
+    List<Integer> c = Arrays.asList(1, 2);
+    List<Integer> d = Arrays.asList(3);
+
+    List<Integer> expected = Arrays.asList(6, 10, 12);
+    assertEquals(expected, SimpleFunctions.toCalculate(a, b));
+    assertNull(SimpleFunctions.toCalculate(c, d));
+
+}
+    /*test for task 5 by Annette g22n2278*/
+    @Test 
+    public void testTask5(){
+        List<Integer> test_a = List.of(250, 52, 9, 98, 800, 12, 43, 10, 18, 3);
+    
+        List<Integer> test_b = List.of(250, 52, 9, 98, 800, 12, 43, 10, 18, 3);
+    
+        boolean output_a = SimpleFunctions.isSorted(test_a);
+        boolean output_b = SimpleFunctions.isSorted(test_b);
+        
+        assertTrue(output_a, "Expected true: the list is sorted");
+        assertFalse(output_b, "Expected false: the list is not sorted");
+        
+    }
    // Test case for Task6 by Monde Quluba g23q5609
-   @Test Task6test
+   @Test
    public void test_RoundUpToNearest100(){
       SimpleFunctions mq = new SimpleFunctions();
-      List<Interger> input = Arrays.asList(45, 150, 299, 100);
-      List<Interger> expected = Arrays.asList(100, 200, 300, 100);
+      List<Integer> input = Arrays.asList(45, 150, 299, 100);
+      List<Integer> expected = Arrays.asList(100, 200, 300, 100);
 
-      assertEquals(expected, mq.roundUpToNearest100(input));
+      assertEquals(expected, mq.listRoundUp(input));
    }
 
 }
