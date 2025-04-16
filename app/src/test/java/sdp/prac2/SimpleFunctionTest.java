@@ -23,13 +23,13 @@ class AppTest {
 
    }
    // Test case for Task6 by Monde Quluba g23q5609
-   @Test Task6test
+   @Test 
    public void test_RoundUpToNearest100(){
       SimpleFunctions mq = new SimpleFunctions();
-      List<Interger> input = Arrays.asList(45, 150, 299, 100);
-      List<Interger> expected = Arrays.asList(100, 200, 300, 100);
+      List<Integer> input = Arrays.asList(45, 150, 299, 100);
+      List<Integer> expected = Arrays.asList(100, 200, 300, 100);
 
-      assertEquals(expected, mq.roundUpToNearest100(input));
+      assertEquals(expected, mq.listRoundUp(input));
    }
 
 }
