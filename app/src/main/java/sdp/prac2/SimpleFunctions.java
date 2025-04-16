@@ -43,6 +43,26 @@ public class SimpleFunctions {
             }
         }
         return output;
+    } 
+    // task3 by luvuyo g23n4074
+    //checks if the brackets are balanced
+    public static boolean Task3(String input) {
+        int balance = 0;
+
+        for (char c : input.toCharArray()) {
+            if (c == '(') {
+                balance++;
+            } else if (c == ')') {
+                balance--;
+               
+                if (balance < 0) {
+                    return false;
+                }
+            }
+        }
+
+       
+        return balance == 0;
     }
     /*Complete the method Task5, which returns true if the list is sorted.*/
 
@@ -58,6 +78,7 @@ public class SimpleFunctions {
             }
         }return true;
     } 
+
 
     /*Task 4-Annette Nyirenda, */
     
