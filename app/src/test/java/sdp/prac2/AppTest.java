@@ -65,6 +65,20 @@ class AppTest {
         assertTrue(result1, "Expected balanced parentheses to return true");
         assertFalse(result2, "Expected unbalanced parentheses to return false");
    }
+    /*test for task 5 by Annette g22n2278*/
+    @Test 
+    public void testTask5(){
+        List<Integer> test_a = List.of(250, 52, 9, 98, 800, 12, 43, 10, 18, 3);
+    
+        List<Integer> test_b = List.of(250, 52, 9, 98, 800, 12, 43, 10, 18, 3);
+    
+        boolean output_a = SimpleFunctions.Task5(test_a);
+        boolean output_b = SimpleFunctions.Task5(test_b);
+        
+        assertTrue(output_a, "Expected true: the list is sorted");
+        assertFalse(output_b, "Expected false: the list is not sorted");
+        
+    }
    // Test case for Task6 by Monde Quluba g23q5609
    @Test
    public void test_RoundUpToNearest100(){
