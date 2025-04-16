@@ -66,7 +66,7 @@ public class SimpleFunctions {
     }
     /*Complete the method Task5, which returns true if the list is sorted.*/
 
-    public boolean isSorted(List<Integer> list){
+    public static boolean isSorted(List<Integer> list){
         // check if the list is empty
         if (list == null || list.isEmpty()){
             return true; // considered sorted since its empty

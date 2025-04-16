@@ -86,8 +86,8 @@ class AppTest {
     
         List<Integer> test_b = List.of(250, 52, 9, 98, 800, 12, 43, 10, 18, 3);
     
-        boolean output_a = SimpleFunctions.Task5(test_a);
-        boolean output_b = SimpleFunctions.Task5(test_b);
+        boolean output_a = SimpleFunctions.isSorted(test_a);
+        boolean output_b = SimpleFunctions.isSorted(test_b);
         
         assertTrue(output_a, "Expected true: the list is sorted");
         assertFalse(output_b, "Expected false: the list is not sorted");
