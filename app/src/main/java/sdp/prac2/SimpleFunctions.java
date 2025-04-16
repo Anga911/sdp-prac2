@@ -60,7 +60,7 @@ public class SimpleFunctions {
     } 
 
     /*Task 4-Annette Nyirenda, returns null if the sizes of the lists are different and true if */
-    
+    //updated task 4 
         public static List<Integer> toCalculate(List <Integer> a, List <Integer> b){
 
         if (a.size() != b.size()){ 
